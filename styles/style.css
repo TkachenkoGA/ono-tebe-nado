@@ -91,16 +91,37 @@
   text-align: left;
 }
 
+/* При использовании данного решения, у меня не проходится автотест связанный с pixel perfect на github
+Визуальное отличие макета от эталона. Изображение можно скачать в артефактах. Первое изображение - эталон, второе - ваша вёрстка, третье - отличие.
+
 .aligned-text_center {
   text-align: center;
 }
-
 .aligned-text_center span:first-child {
   letter-spacing: 30px;
 }
 
 .aligned-text_center span:nth-child(2) {
   letter-spacing: 60px;
+}
+*/
+
+.aligned-text_center {
+  display: inline-block;
+  text-align: center;
+  position: relative;
+}
+
+.aligned-text_center::before {
+  content: "";
+  display: inline-block;
+  width: 30px;
+}
+
+.aligned-text_center::after {
+  content: "";
+  display: inline-block;
+  width: 60px;
 }
 
 .aligned-text_right {
@@ -184,6 +205,11 @@
   position: relative;
   height: inherit;
   color: #fff;
+  padding: 50px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 1;
 }
 
 .lots__card-film {
@@ -203,13 +229,6 @@
   text-decoration: none;
 }
 
-.lots__card {
-  padding: 50px 40px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
 .lots__card-title {
   font-size: 22px;
   font-weight: 700;
@@ -217,14 +236,12 @@
   text-decoration: underline;
   text-underline-offset: 3px;
   text-decoration-thickness: 1px;
-  z-index: 1;
 }
 
 .lots__card-text {
   line-height: 120%;
   font-size: 20px;
   font-weight: 400;
-  z-index: 1;
 }
 
 .lots__more-link {
