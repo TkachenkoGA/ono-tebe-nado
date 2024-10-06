@@ -2,3 +2,5 @@
 
 название: Оно тебе надо?
 автор: Ткаченко Г.А. 
+
+Ссылка на репозиторий: https://github.com/TkachenkoGA/ono-tebe-nado
