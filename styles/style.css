@@ -59,10 +59,7 @@
   background: url("../images/cover.jpg") center/cover;
   color: #fff;
   position: relative;
-
 }
-
-
 
 .cover__title {
   font-size: 100px;
@@ -95,15 +92,15 @@
 }
 
 .aligned-text_center {
-  text-align: center; 
+  text-align: center;
 }
 
 .aligned-text_center span:first-child {
-  letter-spacing: 30px; 
+  letter-spacing: 30px;
 }
 
 .aligned-text_center span:nth-child(2) {
-  letter-spacing: 60px; 
+  letter-spacing: 60px;
 }
 
 .aligned-text_right {
@@ -187,7 +184,6 @@
   position: relative;
   height: inherit;
   color: #fff;
-  
 }
 
 .lots__card-film {
@@ -207,7 +203,7 @@
   text-decoration: none;
 }
 
-.lots__card{
+.lots__card {
   padding: 50px 40px;
   display: flex;
   flex-direction: column;
@@ -221,14 +217,14 @@
   text-decoration: underline;
   text-underline-offset: 3px;
   text-decoration-thickness: 1px;
-  z-index: 1; 
+  z-index: 1;
 }
 
 .lots__card-text {
   line-height: 120%;
   font-size: 20px;
   font-weight: 400;
-  z-index: 1; 
+  z-index: 1;
 }
 
 .lots__more-link {
