@@ -58,7 +58,11 @@
 .cover {
   background: url("../images/cover.jpg") center/cover;
   color: #fff;
+  position: relative;
+
 }
+
+
 
 .cover__title {
   font-size: 100px;
@@ -70,9 +74,20 @@
 }
 
 .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   height: inherit;
-  padding: 168px 50px 50px;
+  z-index: -1;
   background-color: rgba(0, 0, 0, 0.6);
+}
+
+.cover__content {
+  position: relative;
+  z-index: 1;
+  padding: 168px 50px 50px;
 }
 
 .aligned-text_left {
@@ -80,9 +95,15 @@
 }
 
 .aligned-text_center {
-  padding-top: 6px;
-  padding-right: 24px;
-  text-align: center;
+  text-align: center; 
+}
+
+.aligned-text_center span:first-child {
+  letter-spacing: 30px; 
+}
+
+.aligned-text_center span:nth-child(2) {
+  letter-spacing: 60px; 
 }
 
 .aligned-text_right {
@@ -116,13 +137,14 @@
 }
 
 .bet-button {
+  color: #fff;
+  font-family: Raleway, sans-serif;
   font-size: 22px;
   font-weight: 400;
   text-transform: uppercase;
   background: none;
-  border: 1px solid #fff;
+  border: 1px solid currentColor;
   border-radius: 0;
-  color: #fff;
   padding: 12px 32px;
 }
 
@@ -162,8 +184,10 @@
 }
 
 .lots__card {
+  position: relative;
   height: inherit;
   color: #fff;
+  
 }
 
 .lots__card-film {
@@ -183,7 +207,7 @@
   text-decoration: none;
 }
 
-.lots__card .overlay {
+.lots__card{
   padding: 50px 40px;
   display: flex;
   flex-direction: column;
@@ -197,12 +221,14 @@
   text-decoration: underline;
   text-underline-offset: 3px;
   text-decoration-thickness: 1px;
+  z-index: 1; 
 }
 
 .lots__card-text {
   line-height: 120%;
   font-size: 20px;
   font-weight: 400;
+  z-index: 1; 
 }
 
 .lots__more-link {
@@ -253,12 +279,14 @@
 }
 
 .about__text {
+  line-height: 24px;
   font-size: 20px;
   font-weight: 400;
   display: flex;
   flex-direction: column;
   gap: 25px;
   margin-top: 100px;
+  width: 693px;
 }
 
 /* about end */
@@ -270,7 +298,7 @@
   font-weight: 400;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  padding: 186px 50px;
+  padding: 180px 50px 88px;
   justify-content: space-between;
 }
 
