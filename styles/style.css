@@ -67,7 +67,7 @@
   letter-spacing: 0.3em;
   display: flex;
   flex-direction: column;
-  gap: 2px;
+  gap: 6px;
 }
 
 .overlay {
@@ -84,44 +84,27 @@
 .cover__content {
   position: relative;
   z-index: 1;
-  padding: 168px 50px 50px;
+  padding: 165px 50px 51px;
 }
 
 .aligned-text_left {
   text-align: left;
 }
 
-/* При использовании данного решения, у меня не проходится автотест связанный с pixel perfect на github
-Визуальное отличие макета от эталона. Изображение можно скачать в артефактах. Первое изображение - эталон, второе - ваша вёрстка, третье - отличие.
-
 .aligned-text_center {
   text-align: center;
 }
-.aligned-text_center span:first-child {
+
+.letter-spacing-normal {
   letter-spacing: 30px;
 }
 
-.aligned-text_center span:nth-child(2) {
+.letter-spacing-extended {
   letter-spacing: 60px;
 }
-*/
 
-.aligned-text_center {
-  display: inline-block;
-  text-align: center;
-  position: relative;
-}
-
-.aligned-text_center::before {
-  content: "";
-  display: inline-block;
-  width: 30px;
-}
-
-.aligned-text_center::after {
-  content: "";
-  display: inline-block;
-  width: 60px;
+.no-letter-spacing {
+  letter-spacing: 0;
 }
 
 .aligned-text_right {
@@ -132,14 +115,9 @@
   letter-spacing: 0.6em;
 }
 
-.no-letter-spacing {
-  letter-spacing: 0;
-}
-
 .cover__description {
-  margin-top: 120px;
+  margin-top: 128px;
   display: flex;
-  padding-top: 8px;
   justify-content: end;
   align-items: center;
 }
@@ -270,8 +248,8 @@
   border: 1px solid black;
   border-radius: 50%;
   background-color: black;
-  margin-top: 32px;
-  margin-left: 46px;
+  margin-top: 35px;
+  margin-left: 45px;
 }
 
 .about__logo-img {
@@ -285,7 +263,7 @@
 }
 
 .about__title {
-  padding-top: 133px;
+  padding-top: 135px;
   text-transform: uppercase;
   font-size: 40px;
   font-weight: 700;
