@@ -96,11 +96,11 @@
 }
 
 .letter-spacing-normal {
-  letter-spacing: 0.3em;
+  letter-spacing: 30px;
 }
 
 .letter-spacing-extended {
-  letter-spacing: 0.6em;
+  letter-spacing: 60px;
 }
 
 .no-letter-spacing {
